@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.bigbox {
+				width: 1100px;
+				margin: 0 auto;
+				border: 1px solid #000;
+				height: 500px;
+			}
+			
+			.item {
+				width: 200px;
+				height: 200px;
+				margin: 10px 10px 10px 5px;
+				float: left;
+				box-shadow: -2px -2px 4px #CCCCCC;
+				border: 1px solid #999;	
+			}
+			.item div{ margin: 25px auto ;}
+			.item:nth-child(1) .shapes{
+				width: 100px;
+				height: 100px;
+				border: 20px solid;
+				border-color: red green; 
+				border-radius: 50%;
+				transform: rotate(45deg);
+			}
+			.item:nth-child(2) .shapes{
+				width: 100px;
+				height: 100px;
+				border: 20px solid;
+				border-color: red  red blue blue;
+				border-radius:50%;
+				transform: rotate(-45deg);
+			}
+			.item:nth-child(3) .shapes{
+				width: 100px;
+				height: 100px;
+				border: 20px solid;
+				border-color: red;
+				border-radius:50%;
+				transform: rotate(-45deg);
+			}
+			.item:nth-child(4) .shapes{
+				width: 0px;
+				height: 0px;
+				border: 50px solid;
+				border-color: red green;
+				border-radius: 50%;
+				transform: rotate(45deg);
+			}
+			.item:nth-child(5) .shapes{
+				width: 0px;
+				height: 0px;
+				border: 50px solid;
+				border-color: red red green green;
+				border-radius: 50%;
+				transform: rotate(-45deg);
+			}
+			.item:nth-child(6) .shapes{
+				width: 150px;
+				height: 150px;
+				position: relative;
+				background: #ccc;
+				border-radius: 50%;
+				transform: rotate(-45deg);
+			}
+			.item:nth-child(6) .shapes:before{
+				content: "";
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				border: 25px solid;
+				border-color: transparent red ;
+				border-radius: 50%;
+			}
+			.item:nth-child(6) .shapes:after{
+				content: "";
+				width: 0px;
+				height: 0px;
+				border: 20px solid;
+				border-color: transparent red;
+				border-radius: 50%;
+				position: absolute;
+				top: 55px;
+				left:55px;
+			}
+			.item:nth-child(7) .shapes{
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				position: relative;
+				background: #ccc;
+				transform: rotate(-45deg);
+			}
+			.item:nth-child(7) .shapes:before{
+				content: "";
+				position: absolute;
+				width: 110px;
+				height: 110px;
+				border-radius:50%;
+				border: 20px solid;
+				border-color: transparent transparent red red; 
+			}
+			.item:nth-child(7) .shapes:after{
+				content: "";
+				width: 0px;
+				height: 0px;
+				border-radius: 50%;
+				border: 20px solid;
+				border-color: transparent transparent red red;
+				position: absolute;
+				top:55px;
+				left: 55px;
+				}
+		</style>
+	</head>
+
+	<body>
+		<div class="bigbox">
+			<div class="item">
+				<div class="shapes"></div>
+			</div>
+			<div class="item">
+				<div class="shapes"></div>
+			</div>
+			<div class="item">
+				<div class="shapes"></div>
+			</div>
+			<div class="item">
+				<div class="shapes"></div>
+			</div>
+			<div class="item">
+				<div class="shapes"></div>
+			</div>
+			<div class="item">
+				<div class="shapes"></div>
+			</div>
+			<div class="item">
+				<div class="shapes"></div>
+			</div>
+			<div class="item">
+				<div class="shapes"></div>
+			</div>
+			<div class="item">
+				<div class="shapes"></div>
+			</div>
+		</div>
+	</body>
+
+</html>
